@@ -1,0 +1,11 @@
+process.stdin.setEncoding("utf8");
+
+process.stdin.on("data", (input) => {
+  input = input.trim();
+
+  const bigNumber = BigInt(input);
+  const result = bigNumber + BigInt(1);
+  console.log(result.toString());
+
+  process.exit();
+});

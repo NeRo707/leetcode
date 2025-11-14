@@ -1,0 +1,30 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.on('line', (input) => {
+    const n = input;
+    //console.log(n);
+    rl.on('line', (input) => {
+        const a = input.split(' ').map(Number);
+        
+        let cnt=0;
+        for(let i=1; i<n-1; i++){
+            if(a[i] == a[i-1] && a[i] == a[i+1]){
+                cnt++;
+            }
+        }
+        console.log();
+        if (cnt > 0) {
+            console.log(cnt);
+        } else {
+            console.log("-1");
+        }
+
+
+        rl.close();
+    });
+});

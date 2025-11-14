@@ -1,0 +1,16 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.on('line', (s) => {
+  let x = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '1') {
+      x += 1;
+    }
+  }
+  console.log(x);
+});
