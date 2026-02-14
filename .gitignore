@@ -1,8 +1,8 @@
 .vscode
-easy/exes
-medium/exes
-hard/exes
-other/A1X50F7/exes
+easy/**/exes
+medium/**/exes
+hard/**/exes
+other/**/exes
 excal.excalidraw
 pg
 leet.py
